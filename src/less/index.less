@@ -1,0 +1,70 @@
+body {
+  background-color: #e0d8e6;
+  background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+}
+.home {
+  padding: 50px;
+  .headline {
+    display: flex;
+    justify-content: space-around;
+  }
+  input {
+    width: 300px;
+    border-radius: 3px;
+    margin-top: 30px;
+  }
+}
+.movie-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  .movie-card {
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/otis-redding.png");
+    height: auto;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    flex: 1;
+    h2, p {
+    text-align: center;
+    }
+    ul {
+    list-style: none;
+    }
+    li {
+    font-size: 12px;
+    line-height: 1.3em;
+    }
+  }
+}
+.movie-detail {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  p {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  li {
+    list-style: none;
+  }
+}
+.add-movie {
+  display: flex;
+  justify-content: center;
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .movie-input {
+    width: 180px;
+  }
+  .field {
+    border : 3px solid #ffffff;
+    text-align: center;
+    padding: 20px;
+  }
+}
