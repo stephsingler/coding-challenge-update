@@ -8,9 +8,15 @@ const MovieList = props => {
   const { movieList, searchTerm } = props.state
   const filteredMovies = movieList.filter(
     (movie) => {
-      return movie.title.toLowerCase().indexOf(searchTerm) !== -1;
-    }
-  );
+      const movies = Object.values(movie)
+      for(let i = 0; i < movies.length; i++) {
+        if(movies[i].toLowerCase().indexOf(searchTerm) !== -1) {
+          return true;
+        }
+      }
+      return false;
+    });
+
   const renderMovies = () => {
     return filteredMovies.map((movie, index) => {
       const renderRating = () => {

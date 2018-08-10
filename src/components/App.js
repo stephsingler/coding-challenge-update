@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 //components
 import Home from './Home';
 import AddMovie from './AddMovie';
@@ -62,7 +63,8 @@ class App extends Component {
   }
   handleUpdate = newState => {
     const movieIndex = this.state.movieList.indexOf(this.state.movie);
-    return Object.assign(this.state.movieList[movieIndex], newState);
+    const movieList = [...this.state.movieList]
+    return Object.assign(movieList[movieIndex], newState);
   }
   render() {
     return (
@@ -70,9 +72,10 @@ class App extends Component {
         <div className="App">
           <Route exact path="/" render={props => <Home {...props}
             state={this.state}
-            deleteMovie={this.handleDeleteMovie} handleInputChange={this.handleInputChange}
+            deleteMovie={this.handleDeleteMovie}
+            handleInputChange={this.handleInputChange}
             handleMovie={this.handleMovie}
-          />}
+            />}
           />
           <Route path="/AddMovie" render={props => <AddMovie {...props}
             addMovie={this.handleAddMovie} />}
@@ -86,5 +89,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
