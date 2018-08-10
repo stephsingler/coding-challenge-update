@@ -1,13 +1,13 @@
-# InMotion Challenge
-InMotion Web Coding Challenge
+# Movie Collection Web App
+Savea list of all my favorite movies
 
 ### Overview
 * Create a webpage that manages a home movie collection.
-* Users should be able to add a new movie & input: Title, Genre, Rating, Actors, Year.
-* Users should be able to delete a movie.
-* Users should be able to see a list of all movies.
-* Users should be able to update a movie.
-* Users should be able to search for a movie by title
+* Users scan add a new movie & input: Title, Genre, Rating, Actors, Year.
+* Users can delete a movie.
+* Users scan see a list of all movies.
+* Users can update a movie.
+* Users can search for a movie by title, genre, actors, year...
 ### Libraries
 * This SPA was created with Reactjs
 ### Dependencies
@@ -19,4 +19,3 @@ InMotion Web Coding Challenge
   * I used LESS to structure and minimize my css.
 ### Comments
   * I used the Local Storage API to persist the data throughout my application
-  * I did not use lodash.js or underscore.js because I felt that ES6 already handled all the methods that I needed.
